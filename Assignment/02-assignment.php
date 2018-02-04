@@ -13,11 +13,13 @@
 
 <html>
 <?php
+//Define Variables (with arrays)
 $lights = ["on","off"];
 $data = [5,7,9,84,73,22,59,497,12,];
 $variable = "one";
 $y = 1;
 $z = 1;
+//Define Functions
 function helloworld() {
 	echo "Hello World! <br>";
 }
@@ -29,8 +31,10 @@ function onoff($lights) {
 		echo "Off <br>" ;
 	} 
 }
+//Call Functions
 helloworld();
 onoff($lights);
+//Begin Loops
 for ($x=5; $x > 0 ; $x--) {
 	echo "T Minus $x <br>";
 }
@@ -38,15 +42,16 @@ while ($y < 10) {
 	echo "$y mississipi <br>" ;
 	$y++;
 	}
+//Sort
 sort($data);
-
+//Resume loops
 $arrlength=count($data);
 for($n=0;$n<$arrlength;$n++)
   {
   echo $data[$n];
   echo "<br>";
   }
-
+//Switch
 switch ($z) {
 	case 1:
 		echo "This is 1";
