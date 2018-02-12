@@ -13,7 +13,7 @@
 // 02. This criterion is linked to a Learning Outcome Display URL parameter value for "first_name" text input
 // 03. This criterion is linked to a Learning Outcome Display URL parameter value for "email" text input
 // 04. This criterion is linked to a Learning Outcome Display POST data once form has been submitted
-//url: http://localhost:8888/Test%20Page/Assignment/03-assignment%20-%20Austin.php/03-assignment%20-%20Austin.php?first_name=Austin&email=Email
+//url: http://localhost:8888/03-assignment-austin.php?first_name=Austin&email=Email
 ?>
 
 
@@ -23,7 +23,7 @@
 
 <?php if (empty($_POST["email"])): ?>
 
-<form action="./03-assignment - Austin.php" method="POST">
+<form action="./03-assignment-austin.php" method="POST">
 Name: <input type="text" name="first_name" value="<?php echo $_GET["first_name"]; ?>"><br> 
 E-Mail: <input type="text" name="email" value="<?php echo $_GET ["email"]; ?>"><br> 
 <input type="submit"><br>
